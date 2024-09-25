@@ -15,5 +15,3 @@ function PhotoCard(props) {
 }
 
 export default PhotoCard;
-
-//function handleClick() {props.onCardClick(props.card)} onClick={handleClick}

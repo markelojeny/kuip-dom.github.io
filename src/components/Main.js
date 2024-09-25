@@ -6,11 +6,11 @@ import { useNavigate } from 'react-router-dom';
 function Main() {
     const navigate = useNavigate();
     function handleClickSemidvorie() {
-        navigate('/semidvorie');
+        navigate('/kuip-dom.github.io/semidvorie');
     }
 
     function handleClickShablykino() {
-        navigate('/shablykino-village');
+        navigate('/kuip-dom.github.io/shablykino-village');
     }
 
     return (

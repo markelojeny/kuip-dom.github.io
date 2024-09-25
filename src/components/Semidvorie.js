@@ -33,7 +33,7 @@ function Semidvorie(props) {
         setSelectedThirdCard(card);
     }
 
-    if (location.pathname === '/semidvorie') {
+    if (location.pathname === '/kuip-dom.github.io/semidvorie') {
         second__page = (
             <>
                 <main className="content">

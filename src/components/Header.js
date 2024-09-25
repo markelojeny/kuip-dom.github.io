@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function Header(props) {
     const navigate = useNavigate();
     function handleClickFirstPage() {
-        navigate('/');
+        navigate('/kuip-dom.github.io/');
     }
 
     return (

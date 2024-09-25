@@ -34,7 +34,7 @@ function Characteristics(props) {
         setTextOfThirdHouse(textHouse3);
       }, []);
 
-    if (location.pathname === '/semidvorie') {
+    if (location.pathname === '/kuip-dom.github.io/semidvorie') {
         characteristics = (
             <>
                 <section id='Characteristic' className="characteristics">

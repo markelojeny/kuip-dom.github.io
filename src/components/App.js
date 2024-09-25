@@ -41,9 +41,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<FirstPage />} />
-        <Route path="/semidvorie" element={<SecondPage onSendMale={handleSendMail} />} />
-        <Route path="/shablykino-village" element={<SecondPage />} />
+        <Route path="/kuip-dom.github.io/" element={<FirstPage />} />
+        <Route path="/kuip-dom.github.io/semidvorie" element={<SecondPage onSendMale={handleSendMail} />} />
+        <Route path="/kuip-dom.github.io/shablykino-village" element={<SecondPage />} />
       </Routes>
       <InfoTooltip name="register" forms="register" text={popupText} scr={popupImage} onClose={closePopup} isOpen={isGoodRegister} /> 
   </div>
