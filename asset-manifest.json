@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kuip-dom.github.io/static/css/main.8aaaccd0.css",
-    "main.js": "/kuip-dom.github.io/static/js/main.3f9b2960.js",
+    "main.js": "/kuip-dom.github.io/static/js/main.64c07ddb.js",
     "static/js/453.e5bfaf38.chunk.js": "/kuip-dom.github.io/static/js/453.e5bfaf38.chunk.js",
     "static/media/forest.svg": "/kuip-dom.github.io/static/media/forest.fca9c7550fbf25bb9e7b87ad0f0a966a.svg",
     "static/media/IMG_3084.jpg": "/kuip-dom.github.io/static/media/IMG_3084.7bab383ece314296a2e5.jpg",
@@ -40,11 +40,11 @@
     "static/media/krest.svg": "/kuip-dom.github.io/static/media/krest.2ceb783afbab75916ddc.svg",
     "static/media/minkrest.svg": "/kuip-dom.github.io/static/media/minkrest.b793e07c3f4c19e26c11.svg",
     "main.8aaaccd0.css.map": "/kuip-dom.github.io/static/css/main.8aaaccd0.css.map",
-    "main.3f9b2960.js.map": "/kuip-dom.github.io/static/js/main.3f9b2960.js.map",
+    "main.64c07ddb.js.map": "/kuip-dom.github.io/static/js/main.64c07ddb.js.map",
     "453.e5bfaf38.chunk.js.map": "/kuip-dom.github.io/static/js/453.e5bfaf38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8aaaccd0.css",
-    "static/js/main.3f9b2960.js"
+    "static/js/main.64c07ddb.js"
   ]
 }
