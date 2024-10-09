@@ -5,19 +5,15 @@ function Destination(props) {
     return (
         <section className='about'>
                 <div className="destination">
-                    <h3 className="content__title">Как дообраться до миникомплекса "Семидворье"?</h3>
+                    <h3 className="content__title">{props.title}</h3>
                     <div className="destination__information">
                     <div className='destination__description'>
                         <h4 className='destination__title'>Своим ходом</h4>
-                        <p className="destination__text">
-                            На электричке до станции Струнино от Ярославского вокзала. От неё до Шаблкино ходит рейсовый автобус пять раз в день. Либо можно воспользоваться недорогим такси
-                        </p>
+                        <p className="destination__text">{props.foot}</p>
                     </div>
                     <div className='destination__description'>
                         <h4 className='destination__title'>На машине</h4>
-                        <p className="destination__text">
-                            Шаблыкино-3 находится во Владимирской области, недалеко от города Ступино
-                        </p>
+                        <p className="destination__text">{props.car}</p>
                     </div>
                     </div>
                 </div>

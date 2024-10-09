@@ -11,7 +11,6 @@ import shablykinoh21 from "../image/Shablykino/House2/IMG_3114.jpg";
 import shablykinoh22 from "../image/Shablykino/House2/IMG_5587.jpg";
 import shablykinoh23 from "../image/Shablykino/House2/IMG_5589.jpg";
 import shablykinoh24 from "../image/Shablykino/House2/IMG_5600.jpg";
-import shablykinoh25 from "../image/Shablykino/House2/IMG_5633.jpg";
 import shablykinoh26 from "../image/Shablykino/House2/IMG_5639.jpg";
 import shablykinoh30 from "../image/Shablykino/House3/planirovka.JPG";
 import shablykinoh31 from "../image/Shablykino/House3/IMG_3130.jpg";
@@ -26,125 +25,160 @@ import semidvorie3 from "../image/Semidvorie/semidvorie3.JPG";
 import semidvorie4 from "../image/Semidvorie/semidvorie4.JPG";
 import semidvorie5 from "../image/Semidvorie/House1.JPG";
 import semidvorie6 from "../image/Semidvorie/semidvorie.JPG";
+import forest110 from "../image/Shablykino/Forest/IMG_3067.jpg";
+import forest111 from "../image/Shablykino/Forest/IMG_3125.jpg";
+import forest112 from "../image/Shablykino/Forest/IMG_5602.jpg";
+import forest120 from "../image/Shablykino/Notforest/IMG_5524.jpg";
+import forest121 from "../image/Shablykino/Notforest/IMG_5559.jpg";
 
 const House1 = [
     {
         id: 10,
-      name: 'Планировка',
+      name: 'Планировка дома размера S',
       link: shablykinoh10
     },
     {
-        id: 11,
-      name: 'Фото1',
-      link: shablykinoh11
-    },
-    {
-        id: 12,
-      name: 'Фото2',
-      link: shablykinoh12
-    },
-    {
-        id: 13,
-      name: 'Фото3',
-      link: shablykinoh13
-    },
-    {
-        id: 14,
-      name: 'Фото4',
-      link: shablykinoh14
-    },
-    {
-        id: 15,
-      name: 'Фото5',
-      link: shablykinoh15
-    },
-    {
-        id: 16,
-      name: 'Фото5',
-      link: shablykinoh16
-    },
-    {
-        id: 17,
-      name: 'Фото5',
-      link: shablykinoh17
-    }
-];
-
-const House2 = [
-    {
-        id: 20,
-      name: 'Планировка',
+      id: 12,
+      name: 'Планировка дома размера M',
       link: shablykinoh20
     },
     {
-        id: 21,
-      name: 'Фото1',
-      link: shablykinoh21
-    },
-    {
-        id: 22,
-      name: 'Фото2',
-      link: shablykinoh22
-    },
-    {
-        id: 23,
-      name: 'Фото3',
-      link: shablykinoh23
-    },
-    {
-        id: 24,
-      name: 'Фото4',
-      link: shablykinoh24
-    },
-    {
-        id: 25,
-      name: 'Фото5',
-      link: shablykinoh25
-    },
-    {
-        id: 26,
-      name: 'Фото5',
-      link: shablykinoh26
-    }
-];
-
-const House3 = [
-    {
-        id: 30,
-      name: 'Планировка',
+      id: 13,
+      name: 'Планировка дома размера L',
       link: shablykinoh30
     },
     {
-        id: 31,
-      name: 'Фото1',
+        id: 14,
+      name: 'дом размер S',
+      link: shablykinoh17
+    },
+    {
+        id: 15,
+      name: 'общий вид',
+      link: shablykinoh12
+    },
+    {
+        id: 16,
+      name: 'общий вид',
+      link: shablykinoh13
+    },
+    {
+        id: 17,
+      name: 'дом размер S',
+      link: shablykinoh14
+    },
+    {
+        id: 18,
+      name: 'общий вид',
+      link: shablykinoh22
+    },
+    {
+      id: 20,
+      name: 'общий вид',
+      link: shablykinoh24
+    },
+    {
+      id: 31,
+      name: 'дом размер L',
       link: shablykinoh31
     },
     {
-        id: 32,
-      name: 'Фото2',
+      id: 32,
+      name: 'дом размер L',
       link: shablykinoh32
     },
     {
-        id: 33,
-      name: 'Фото3',
+      id: 33,
+      name: 'дом размер L',
       link: shablykinoh33
     },
     {
         id: 34,
-      name: 'Фото4',
+      name: 'дом размер L',
       link: shablykinoh34
     },
     {
         id: 35,
-      name: 'Фото5',
+      name: 'дом размер L',
       link: shablykinoh35
     },
     {
         id: 36,
-      name: 'Фото5',
+      name: 'дом размер L',
       link: shablykinoh36
+    },
+    {
+      id: 21,
+      name: 'дом размер M',
+      link: shablykinoh21
+    },
+    {
+      id: 22,
+      name: 'Общий вид',
+      link: shablykinoh22
+    },
+    {
+      id: 23,
+      name: 'общий вид',
+      link: shablykinoh23
+    },
+    {
+      id: 24,
+      name: 'общий вид',
+      link: shablykinoh24
+    },
+    {
+      id: 26,
+      name: 'дом размер M',
+      link: shablykinoh26
+    },
+    {
+      id: 11,
+      name: 'дом размер S',
+      link: shablykinoh11
+    },
+    {
+      id: 27,
+      name: 'дом размер S',
+      link: shablykinoh15
+    },
+    {
+      id: 28,
+      name: 'дом размер M',
+      link: shablykinoh16
     }
 ];
+
+const Forest = [
+  {
+      id: 110,
+    name: 'Планировка',
+    link: forest110
+  },
+  {
+    id: 111,
+  name: 'Планировка',
+  link: forest111
+  },
+  {
+    id: 112,
+  name: 'Планировка',
+  link: forest112
+  }
+]
+
+const Notforest = [
+  {
+      id: 120,
+    name: 'Планировка',
+    link: forest120
+  },
+  {
+    id: 121,
+    name: 'Планировка',
+    link: forest121
+  }
+]
 
 const semidvorieCards = [
     {  
@@ -179,4 +213,4 @@ const semidvorieCards = [
     }
 ];
 
-export {House1, House2, House3, semidvorieCards};
+export {House1, Forest, Notforest, semidvorieCards};

@@ -4,10 +4,10 @@ import Footer from './Footer';
 import Main from './Main';
 import '../blocks/FirstPage.css';
 
-function FirstPage() {
+function FirstPage(props) {
     return (
         <div>
-            <Header />
+            <Header onButtonClick={props.onButtonClick} />
             <Main />
             <Footer />
       </div>

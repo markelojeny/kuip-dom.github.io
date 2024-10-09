@@ -7,14 +7,11 @@ import '../blocks/Semidvorie.css';
 function SecondPage(props) {
     return (
         <>
-            <Header>
-                <nav className="nav">
-                    <a className="nav__link" href="#Project">О проекте</a>
-                    <a className="nav__link" href="#Characteristic">Характеристики</a>
-                    <a className="nav__link" href="#Contact">Контакты</a>
-                </nav>
-            </Header>
-            <Semidvorie onMail={props.onSendMale}/>
+            <Header onButtonClick={props.onButtonClick} />
+            <Semidvorie 
+            onPhotoClick={props.onPhotoClick} 
+            onSecondPhotoClick={props.onSecondPhotoClick} 
+            onThirdPhotoClick={props.onThirdPhotoClick}/>
             <Footer />
         </>
     )

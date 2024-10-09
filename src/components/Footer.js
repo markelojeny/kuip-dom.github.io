@@ -6,7 +6,7 @@ function Footer() {
             <p className="footer__title">Контакты:</p>
             <a 
                 className='footer__tel' 
-                href="tel:+74951234567">+7 (495) 123-45-67</a>
+                href="tel:+79264919908">+7 (926) 491-99-08</a>
         </footer>
     )
 }

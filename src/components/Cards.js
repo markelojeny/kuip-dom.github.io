@@ -6,7 +6,6 @@ function Cards(props) {
 
     return (
         <>
-            <h4 className="characteristics__title">{props.title}</h4>
             <div className="characteristic">
                     <div className="characteristic__cards">
                     <PopupPhoto main={props.first} card={props.photo} />
@@ -18,6 +17,14 @@ function Cards(props) {
                         {props.texts.map((initialCards, i) => {
                             return <p key={initialCards.id} className="characteristic__text">{initialCards.text}</p>
                         })}
+                    </div>
+                    <div className='feature'>
+                        <h3 className='feature__title'>Особенности</h3>
+                        <div className='feature__texts'>
+                            {props.feature.map((initialCards, i) => {
+                                return <p key={initialCards.id} className="feature__text">{initialCards.text}</p>
+                            })}
+                        </div>
                     </div>
             </div>
         </>

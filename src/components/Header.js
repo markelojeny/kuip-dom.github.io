@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../image/logo_dom.svg';
+import logo from '../image/logo.png';
 import { useNavigate } from 'react-router-dom';
 
 function Header(props) {
@@ -10,13 +10,8 @@ function Header(props) {
 
     return (
         <header className="header">
-            <div onClick={handleClickFirstPage} className="header__logo">
-                <img src={logo} className="logo" alt="logo" />
-                <h1 className="logo__text">
-                    Продажа индидуальных жилых домов
-                </h1>
-            </div>
-            {props.children}
+            <img onClick={handleClickFirstPage} src={logo} className="header__logo" alt="logo" />
+            <button onClick={props.onButtonClick} className="header__button">Связаться с нами</button>
         </header>
     )
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Contact = (props) => {
+
+    const className = `popup popup_type_${props.name} ${props.isOpen && `popup_opened`}`; 
     const [formValue, setFormValue] = React.useState({ 
         fio: '',
         email: '',
@@ -13,7 +15,7 @@ const Contact = (props) => {
           ...formValue, 
           [name]: value 
         }); 
-    } 
+    }
     
     const handleSubmit = (e) => { 
         e.preventDefault();
@@ -23,9 +25,11 @@ const Contact = (props) => {
     }
 
     return (
-        <section id='Contact' className="contact">
-                <div className="about__description">
-                    <h3 className="content__title">Контактная информация</h3>
+        <section className={className}>
+            <div className={`popup__container popup__container_type_${props.forms}`}>
+                <h3 className="popup__title">Контактная информация</h3>
+                <p className='contact__text'>Если вас заинтересовало наше предложение, то позвоните по номеру телефона +7 (926) 491-99-08  или оставьте заявку нам на почту</p>
+                <div className="contact__description">
                     <form 
                         action="submit"
                         className='contact__form'
@@ -64,7 +68,10 @@ const Contact = (props) => {
                             className='contact__button'>оставить заявку</button>
                     </form>
                 </div>
-                <p className='contact__text'>Если вас заинтересовало наше предложение, то позвоните по номеру телефона 8 925 999-96-10  или оставьте заявку нам на почту</p>
+                <button className="popup__button-close"  
+                type="button"  
+                onClick={props.onClose}></button> 
+            </div>
         </section>
     )
 }

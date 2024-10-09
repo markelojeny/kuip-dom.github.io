@@ -2,7 +2,7 @@ import React from 'react';
 
 function InfoTooltip(props) { 
 
-    const className = `popup popup_type_${props.name} ${props.isOpen && `popup_opened`}`; 
+  const className = `popup popup_type_${props.name} ${props.isOpen && `popup_opened`}`; 
 
   return ( 
     <div className={className}> 
