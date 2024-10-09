@@ -40,7 +40,6 @@ function App() {
 
   function handleCardFirstClick(card) { 
     setSelectedFirstCard(card);
-    console.log(card);
   }
 
   function handleCardSecondClick(card) { 
@@ -67,7 +66,6 @@ function App() {
   function handleSecondPhoto() {
     setIsSecondPhoto(true);
     setSecondHouse(Forest);
-    console.log(Forest);
   }
 
   function handleThirdPhoto() {

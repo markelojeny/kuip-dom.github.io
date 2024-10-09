@@ -11,7 +11,6 @@ function Shablykino(props) {
 
     function handleClickSecond() { 
         props.onCardSecondClick(props.secondcard);
-        console.log(props.secondcard)
     }
 
     function handleClickThird() { 

@@ -19,8 +19,6 @@ const Contact = (props) => {
     
     const handleSubmit = (e) => { 
         e.preventDefault();
-        console.log(props);
-        console.log(formValue.fio, formValue.email, formValue.tel);
         props.onSendMail(formValue.fio, formValue.email, formValue.tel);
     }
 
