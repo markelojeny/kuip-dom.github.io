@@ -17,7 +17,7 @@ function Destination(props) {
                     </div>
                     </div>
                 </div>
-                <iframe className="destination__foto" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a41f52235f7426d769f21bbc86e8b0705f0c9c647f815537046bf65cb7b98e9&amp;source=constructor"></iframe>
+                <iframe className="destination__foto" title={props.iframe} src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a41f52235f7426d769f21bbc86e8b0705f0c9c647f815537046bf65cb7b98e9&amp;source=constructor"></iframe>
             </section>
     )
 }

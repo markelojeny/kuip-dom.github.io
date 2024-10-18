@@ -18,7 +18,7 @@ function ShablykinoPopup(props) {
             <figure className="popup__figure">
                 <button className="popup__button-close" type="button" onClick={props.onClose}/>
                 <figcaption className="popup__title popup__title_type_image">{props.card.name}</figcaption>
-                <img className="popup__picture" src={props.card.link || shablykinoh10} />
+                <img className="popup__picture" src={props.card.link || shablykinoh10} alt="Подождите немного и фотография загрузится" />
             </figure>
             <div className="photo__cards photo__cards_type_shablykino">
                 {houses.map((initialCards, i) => {
@@ -31,15 +31,3 @@ function ShablykinoPopup(props) {
 }
 
 export default ShablykinoPopup;
-
-/*<figure className="popup__container popup__container_type_image">
-          <button className="popup__button-close" type="button" onClick={props.onClose}/>
-          <img className="popup__picture" src={props.card.link} alt={props.card.name}/>
-          <figcaption className="popup__title popup__title_type_image">{props.card.name}</figcaption>
-        </figure>
-        
-        <div className="photo__cards">
-            {thirdHouse.map((initialCards, i) => {
-                return <img className="photo__card_size_small" src={initialCards.link} alt={initialCards.name} key={initialCards.id}/>
-            })}
-        </div>*/

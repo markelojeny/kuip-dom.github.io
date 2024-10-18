@@ -6,18 +6,18 @@ import { useNavigate } from 'react-router-dom';
 function Main() {
     const navigate = useNavigate();
     function handleClickSemidvorie() {
-        navigate('/kuip-dom.github.io/semidvorie');
+        navigate('/semidvorie');
     }
 
     function handleClickShablykino() {
-        navigate('/kuip-dom.github.io/shablykino-village');
+        navigate('/shablykino-village');
     }
 
     return (
         <main className="main">
             <section className="houses">
                 <div className="house">
-                    <img className="house__foto" src={semidvirie} alt="Подождите немного и фотография загрузится" />
+                    <img className="house__foto" src={semidvirie}  onClick={handleClickSemidvorie} alt="Подождите немного и фотография загрузится" />
                     <div className="house__description">
                         <h2 className="house__title">Семидворье</h2>
                         <p className="house__text">Домики в Пушкинском районе Московской области. Вокруг лес, а также церкви.</p>
@@ -25,7 +25,7 @@ function Main() {
                     <button onClick={handleClickSemidvorie} className="house__buttom">Подробнее</button>
                 </div>
                 <div className="house">
-                    <img className="house__foto" src={shablykino} alt="Подождите немного и фотография загрузится"/>
+                    <img className="house__foto" src={shablykino} onClick={handleClickShablykino} alt="Подождите немного и фотография загрузится"/>
                     <div className="house__description">
                         <h2 className="house__title">Шаблыкино Village</h2>
                         <p className="house__text">Уютные комфортные домики во Владимирской области.</p>

@@ -88,7 +88,7 @@ function App() {
     console.log(fio, mail, tel);
     api.register(fio, mail, tel)
     .then(() => {
-        console.log(fio, mail, tel);
+        setIsContact(false);
         setPopupImage(sendOk);
         setPopupText("Заявка отправлена!");
         navigate('/', {replace: true});
@@ -103,16 +103,16 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/kuip-dom.github.io/" element={<FirstPage onButtonClick={handleContact} />} />
-        <Route path="/kuip-dom.github.io/semidvorie" element={<SecondPage onButtonClick={handleContact} />} />
-        <Route path="/kuip-dom.github.io/shablykino-village" element={<SecondPage 
+        <Route path="/" element={<FirstPage onButtonClick={handleContact} />} />
+        <Route path="/semidvorie" element={<SecondPage onButtonClick={handleContact} />} />
+        <Route path="/shablykino-village" element={<SecondPage 
           firstcard={firstHouse}
           secondcard={secondHouse}
           thirtcard={thirdHouse}
           onPhotoClick={handlePhoto} 
           onSecondPhotoClick={handleSecondPhoto} 
           onThirdPhotoClick={handleThirdPhoto} 
-          onButtonClick={handleGoodClick} />} />
+          onButtonClick={handleContact} />} />
       </Routes>
       <InfoTooltip name="register" forms="register" text={popupText} scr={popupImage} onClose={closePopup} isOpen={isGoodRegister} />
       <Contact name="contact" forms="contact" onSendMail={handleSendMail} onClose={handleClose} isOpen={isContact} />
@@ -136,7 +136,3 @@ function App() {
 }
 
 export default App;
-
-/* firstcard={selectedFirstCard} 
-                        secondcard={selectedSecondCard} 
-                        thirdcard={selectedThirdCard} */

@@ -4,6 +4,7 @@ import Characteristics from './Characteristics';
 import Destination from './Destination';
 import Contant from './Contant';
 import Shablykino from './Shablykino';
+import Payment from './Payment';
 import shablykino from "../image/forest.svg";
 import semidvorie from "../image/House2.png";
 import { useLocation } from 'react-router-dom';
@@ -28,6 +29,7 @@ function Semidvorie(props) {
                         photo={semidvorie} />
                     <Characteristics card={selectedCard} onCardClick={handleCardClick}/>
                     <Destination 
+                        iframe='semidvorie'
                         title='Как дообраться до комплекса "Семидворье"?'
                         foot="На электричке от Ярославского вокзала до станции Зеленоградская. От неё Семидворья пешком 15 минут либо можно воспользоваться недорогим такси"
                         car="Московская область, Пушкинский район, дп Зеленоградский, ул. Славянская 11" />
@@ -49,7 +51,9 @@ function Semidvorie(props) {
                         onCardFirstClick={props.onPhotoClick} 
                         onCardSecondClick={props.onSecondPhotoClick} 
                         onCardThirdClick={props.onThirdPhotoClick} />
+                    <Payment />
                     <Destination
+                    iframe='shablykino'
                     title="Как добраться до комплекса Шаблыкино Village?"
                     foot="На электричке до станции Струнино от Ярославского вокзала. От неё до Шаблкино ходит рейсовый автобус пять раз в день. Либо можно воспользоваться недорогим такси"
                     car="Владимирская область, Александровский р-н, Каринское МО, ДПК Шаблыкино-3 " />
