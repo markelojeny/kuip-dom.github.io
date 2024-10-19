@@ -6,7 +6,7 @@ class Api {
   
   register (fio, email,  tel) { 
     console.log(fio, email,  tel); 
-    return this._request(`${this._url}/semidvorie`, { 
+    return this._request(`${this._url}/`, { 
         method: 'POST', 
         headers: this._headers, 
         body: JSON.stringify({ fio, email,  tel }), 
