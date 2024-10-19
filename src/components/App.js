@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import FirstPage from './FirstPage';
-import SecondPage from './SecondPage';
 import Contact from './Contact';
 import sendOk from "../image/ok.svg";
 import sendNotOk from "../image/not_ok.svg";
@@ -12,6 +11,9 @@ import ForestPopup from './ForestPopup';
 import NotForestPopup from './NotForestPopup';
 import api from "../utils/api"; 
 import { House1, Forest, Notforest } from '../utils/photo';
+import SemidvoriePage from './SemidvoriePage';
+import ShablykinoPage from './ShablykinoPage';
+import '../blocks/Semidvorie.css';
 
 function App() {
   const navigate = useNavigate();
@@ -104,8 +106,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<FirstPage onButtonClick={handleContact} />} />
-        <Route path="/semidvorie" element={<SecondPage onButtonClick={handleContact} />} />
-        <Route path="/shablykino-village" element={<SecondPage 
+        <Route path="/semidvorie" element={<SemidvoriePage onButtonClick={handleContact} />} />
+        <Route path="/shablykino-village" element={<ShablykinoPage 
           firstcard={firstHouse}
           secondcard={secondHouse}
           thirtcard={thirdHouse}

@@ -33,7 +33,7 @@ class Api {
 }
 
 const api = new Api ({ 
-  url: 'http://localhost:3001', 
+  url: 'http://centre2000-houses.online',
   headers: {
     'Content-Type': 'application/json', 
   },
