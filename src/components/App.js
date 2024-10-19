@@ -96,6 +96,7 @@ function App() {
         navigate('/', {replace: true});
     })
     .catch(() => {
+        setIsContact(false);
         setPopupImage(sendNotOk);
         setPopupText("Что-то пошло не так! Попробуйте ещё раз."); 
     }) 
